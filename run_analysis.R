@@ -350,9 +350,13 @@ har.create.and.write.datasets = function(in.output.file = "tidy.agg.csv") {
     print("aggregating tidy series");
     tidy.agg = har.build.tidy.agg(tidy.series);
     
-    print("writing aggregated tidy series");
-    write.csv(tidy.agg, in.output.file);
+    # optional: un-comment the line below to produce a "molten" (narrow) version of the tidy data
+    # tidy.agg = har.build.tidy.agg.molten(tidy.agg)
     
+    print("writing aggregated tidy series");
+    write.csv(tidy.agg,  in.output.file);
+    
+    tidy.data
 }
 
 # end of file
