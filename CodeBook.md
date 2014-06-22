@@ -1,14 +1,20 @@
 CodeBook for Tidy Data
 ======================
 
-Documentation of dataset produced by the "har.create.and.write.datasets()" function in "run_analysis.R"
+Documentation of "wide" (standard) dataset produced by the "har.create.and.write.datasets()" function in "run_analysis.R"
 
 
 Overview
 --------
 
-Tidy data set containing averaged measurements from each of the train and test measurements datasets collected
-as part of the HAR study.
+A "wide" tidy data set containing averaged measurements from each of the train and test measurements datasets collected
+as part of the HAR study.  A "wide" data set is produced by default in order to preserve the original form of the data
+per the study.  The data are "tidy" in this form inasmuch as each variable holds information unrelated to any other.
+
+Note that the script can also produce a "tall" version of this tidy dataset as documented in the README.md file.  In 
+the "tall" case, exactly one "value" is produced for each "variable", and the same results are presented in a "pivoted",
+tall form, the same as as described below with the grouping variables in common, and the "variable" and "value" variables
+added instead of the 64 measurements variables present in the "wide" form.
 
 
 Grouping Variables
