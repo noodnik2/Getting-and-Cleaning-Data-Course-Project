@@ -14,6 +14,10 @@ Instructions for running the script
 Output Produced
 ---------------
 
+A "wide" version of the tidy averaged measurements data are produced by default.  However, the script
+will produce a "molten" (narrow) version of the dataset if the call to the method "har.build.tidy.agg.molten"
+in the function "har.create.and.write.datasets" is un-commented before running it.
+
 See the CodeBook.md file for documentation of the dataset produced by this script.
 
 
