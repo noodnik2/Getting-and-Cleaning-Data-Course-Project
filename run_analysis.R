@@ -41,6 +41,11 @@
 #           variable for each activity and each subject. 
 #
 
+
+#
+#   --- Functions ---
+#
+
 #
 #   function har.get.data.fullpath(in.data.file)
 #
@@ -329,13 +334,12 @@ har.build.tidy.agg.molten = function(in.tidy.agg) {
 #   har.data.folder -   the base folder location where the HAR data files are stored
 #                       (use "." if the data files are stored in the current working directory)
 #
-#har.data.folder <- "C:/Users/rossma/Documents/My Notes/Personal/Learning/Getting and Cleaning Data/Artifacts/Project/UCI HAR Dataset"
 har.data.folder <- "."
 
 #
 #
-#   Perform the full sequence of steps to extract, transform and save
-#   the desired HAR data according to the assignment:
+#   Perform the full sequence of steps to extract, transform, save and return
+#   the desired HAR data, according to the assignment:
 #
 #       1. extract the desired measurements from the HAR data
 #       2. aggregate the data calculating mean measurement values
@@ -355,7 +359,7 @@ har.create.and.write.datasets = function(in.output.file = "tidy.agg.csv") {
     print("writing aggregated tidy series");
     write.csv(tidy.agg,  in.output.file);
     
-    tidy.data
+    tidy.agg
 }
 
 # end of file
