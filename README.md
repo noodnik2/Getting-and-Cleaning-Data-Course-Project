@@ -4,6 +4,18 @@ Getting-and-Cleaning-Data-Course-Project
 Script for Creating Tidy Dataset from Human Activity Recognition Using Smartphones (HAR) Dataset
 
 
+Dependencies
+------------
+
+The script was developed in RStudio Version 0.98.507 which bundles R 3.1.0, and should run
+properly with any similar / compatible version of R.
+
+The script requires the following packages:
+
+  - data.tables
+  - reshape2
+
+
 Instructions for running the script
 -----------------------------------
 
