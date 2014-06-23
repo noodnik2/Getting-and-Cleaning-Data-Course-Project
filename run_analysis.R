@@ -45,7 +45,6 @@
 #   function har.get.data.fullpath(in.data.file)
 #
 #   Returns the full path to the specified HAR data file
-#   by simply 
 #
 har.get.data.fullpath <- function(in.data.file) {
     sprintf("%s/%s", har.data.folder, in.data.file)
