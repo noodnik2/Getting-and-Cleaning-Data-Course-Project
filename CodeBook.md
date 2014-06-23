@@ -14,7 +14,7 @@ per the study.  The data are "tidy" in this form inasmuch as each variable holds
 Note that the script can also produce a "tall" version of this tidy dataset as documented in the README.md file.  In 
 the "tall" case, exactly one "value" is produced for each "variable", and the same results are presented in a "pivoted",
 tall form, the same as as described below with the grouping variables in common, and the "variable" and "value" variables
-added instead of the 64 measurements variables present in the "wide" form.
+added instead of the 66 measurements variables present in the "wide" form.
 
 
 Grouping Variables
@@ -29,7 +29,7 @@ Grouping Variables
 Measurements
 ------------
 
-Averages of each of 64 measurement variables, named according to a standard R-transformation
+Averages of each of 66 measurement variables, named according to a standard R-transformation
 of the original names of the HAR "mean" and "standard deviation" data variables (those HAR
 variables whose name end with either "mean()" or "std()").  See the HAR codebook for the
 underlying meaning of each of these measurements.
